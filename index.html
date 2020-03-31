@@ -6,8 +6,9 @@
         <script>
             var d = window.location.href.split("?")[1];
             if (d) {
-                value = d.split("=")[1]
-                document.getElementsByName("b").innerHTML = value
+                value = d.split("=")[1];
+                alert(value);
+                document.getElementsByName("b").innerHTML = value;
             }
         </script>
         <p>Secret value is <b>6443003</b>.</p>
