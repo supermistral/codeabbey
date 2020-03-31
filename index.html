@@ -3,17 +3,16 @@
         <title>Basics of HTML demo</title>
     </head>
     <body>
+        <p>Secret value is <b>22</b>.</p>
+        <p>Read more at
+            <a href="http://www.codeabbey.com/index/task_view/basics-of-html">this task</a>.
+        </p>
         <script>
             var d = window.location.href.split("?")[1];
             if (d) {
                 value = d.split("=")[1];
-                alert(value);
-                document.getElementsByName("b").innerHTML = value;
+                document.querySelector("b").innerHTML = value;
             }
         </script>
-        <p>Secret value is <b>6443003</b>.</p>
-        <p>Read more at
-            <a href="http://www.codeabbey.com/index/task_view/basics-of-html">this task</a>.
-        </p>
     </body>
 </html>
